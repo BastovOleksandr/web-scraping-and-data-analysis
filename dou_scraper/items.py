@@ -6,7 +6,10 @@
 import scrapy
 
 
-class DouScraperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class VacancyItem(scrapy.Item):
+    company_name = scrapy.Field()
+    vacancy_title = scrapy.Field()
+    job_locations = scrapy.Field()
+    salary = scrapy.Field()
+    technologies = scrapy.Field()
+    required_exp = scrapy.Field()
